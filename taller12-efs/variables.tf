@@ -2,7 +2,7 @@
 variable "region" {
     description = "The AWS region"
     type = string
-    default = "us-east1"
+    default = "us-east-1"
 }
 
 variable "ami_id" {
@@ -27,6 +27,6 @@ variable "nombre_llave" {
 variable "cantidad_instancias" {
     description = "Cantidad de instancias"
     type = number
-    default = 1
+    default = 2
   
 }

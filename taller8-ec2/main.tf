@@ -36,8 +36,8 @@ resource "aws_security_group" "mi-sg-terraform" {
 # Declaracion de los recursos de AWS
 resource "aws_instance" "mi_instancia_2" {
   ami = "ami-0c230065b91270bc6" #ID de la imagen de Amazon Linux
-  instance_type = "t2.medium" #Tipo de la instancia
-  key_name = "mi-primera-llaves-dt" #Nombre del archivo de par de llaves de seguridad
+  instance_type = "t3.micro" #Tipo de la instancia
+  key_name = "mi-primera-llaves-ft" #Nombre del archivo de par de llaves de seguridad
   tags = {
     Name = "MiInstanciaTerraform2"
   }

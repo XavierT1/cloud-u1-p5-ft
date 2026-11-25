@@ -56,7 +56,7 @@ resource "aws_vpc_security_group_egress_rule" "salida_internet" {
 #Entrada
 #Regla entrada EFS 2049
 resource "aws_vpc_security_group_ingress_rule" "entrada_efs" {
-  security_group_id = aws_security_group.mi-sg-efs-14.id
+  security_group_id = aws_security_group.mi-sg-efs.id
   ip_protocol = "tcp"
   from_port = 2049
   to_port = 2049
